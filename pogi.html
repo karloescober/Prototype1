@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR Code Generator</title>
+<style>
+    /* Styles for the QR code popup */
+    .popup {
+        display: none;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border: 2px solid black;
+        z-index: 1000;
+    }
+</style>
+</head>
+<body>
+
+<select id="paymentMethod" onchange="generateQRCode()">
+    <option value="">Select Payment Method</option>
+    <option value="gcash">GCash</option>
+    <option value="maya">Maya</option>
+    <!-- Add more options as needed -->
+</select>
+
+<!-- Popup div for QR code -->
+<div id="popup" class="popup">
+    <img id="qrcode" src="" alt="QR Code">
+    <button onclick="closePopup()">Close</button>
+</div>
+
+<script>
+    function generateQRCode() {
+        var selectedMethod = document.getElementById("paymentMethod").value;
+        if (selectedMethod === "gcash") {
+            var qrCodeUrl = "https://via.placeholder.com/200";
+            document.getElementById("qrcode").src = qrCodeUrl;
+            document.getElementById("popup").style.display = "block";
+        } else if (selectedMethod === "maya") {
+            var qrCodeUrl = "https://via.placeholder.com/200";
+            document.getElementById("qrcode").src = qrCodeUrl;
+            document.getElementById("popup").style.display = "block";
+        } else {
+            // If no method is selected or an unknown method is selected, hide the popup
+            document.getElementById("popup").style.display = "none";
+        }
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

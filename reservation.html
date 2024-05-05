@@ -1,0 +1,171 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Reservation</title>
+    <style type="text/css">
+        body {
+            background-repeat: no-repeat;
+            background-size: 100%; 
+            background-attachment: fixed;
+            background-color: white;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(431310930_739972584788375_2803517187540897881_n.jpg);
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .popup {
+          display: none;
+          position: fixed;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          background-color: white;
+          padding: 20px;
+          border: 2px solid black;
+          z-index: 1000;
+        }
+        
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="reservation.css">
+    <!--Patriots barbershop-->
+    <!--3.1.2024-->
+
+    <div class="top-navigation">
+        <div class="logo-position">
+            <div class="navigation-logo-container">
+                <a href='index.HTML'><img src="Profile Shop.jpg" alt="Home Logo" class="navigation-logo"></a>
+                <h1 class="navigation-title">
+                    Patriots<br>
+                    Barbershop & Nails
+                </h1>
+            </div>
+        </div>
+        <ul>
+            <li><a href='index.HTML'>Reservation</a></li>
+            <li><a href='Staff.html'>Staff</a></li>
+            <li><a href='Aboutus.html'>About Us</a></li>
+            <li><a href='Contactus.html'>Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="center">
+            <form action="">
+                <h1 style="text-align: center;">CUSTOMER INFORMATION</h1><hr style="height:2px;border-width:0;color:gray;background-color:gray"><br>
+                <label for="fullname"><b> Customer FullName:</b>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Full Name" required><br><br>
+                
+                <label for="address"><b>Customer Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+                <input type="text" id="address" name="address" placeholder="Complete Address" required><br><br>
+                
+                <label for="contact"><b>Contact Number:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="tel" id="contact" name="contact" placeholder="0909-090-0909" required><br><br>
+                
+                <label for="email"><b>Email Address:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="email" id="email" name="email" placeholder="Patriotsbarbershop@gmail.com" required><br><br>
+                
+                <label for="schedule"><b>Date/Time of Haircut:</b>&nbsp;&nbsp;&nbsp;</label>
+                <input type="datetime-local"  name="" id="Schedule" required><br>
+
+                <label for="Payment"></label><br>
+                <label for="Payment"><b>Payment:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select id="paymentMethod" onchange="generateQRCode()">
+                  <option value="">Select Payment</option>
+                  <option value="Cash">Cash</option>
+                  <option value="gcash">GCash</option>
+                  <option value="maya">Maya</option>
+              </select><br><br>
+
+              <div id="popup" class="popup">
+                <img id="qrcode" src="" alt="QR Code">
+                <button onclick="closePopup()">Close</button>
+            </div>
+
+              <label for="proof"><b>Upload Proof of Payment:</b></label>
+              <input type="file" id="proof" name="proof"><br><br>
+                
+                <div style="text-align: center;">
+                    <input type="button" value="Reserve" onclick="Reserve()">
+                </div>
+            </form>
+        </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <footer>
+        <div class="gotop">
+          <a href="#top">
+            <img src="gototop.png" alt="Go to top" width="150px">
+          </a>
+        </div>
+        <div class="footer">
+          <div class="footer-left">
+            <img src="Profile Shop.jpg" alt="Patriots Logo">
+            <p>Patriot Barber Shop & Nails offers a comprehensive grooming experience, combining classic and trendy haircuts with stress-relieving back massages. Their experienced team provides personalized treatments, while their relaxing atmosphere ensures a rejuvenated and relaxed client. Visit Patriot for a unique grooming experience.</p>
+          </div>
+          <div class="footer-center">
+            <h3>Our Services</h3>
+            <ul>
+              <li><a href="index.HTML">Haircuts</a></li>
+              <li><a href="#">Nail Services</a></li>
+            </ul>
+            <h3>Hours of Operation</h3>
+            <p>Monday - Sunday: [9:20 am] - [8:30 pm]</p>
+          </div>
+          <div class="footer-right">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="https://www.facebook.com/PatriotsBarbershop"><img src="facebook.png" alt="Facebook"><span>Facebook</span></a></li>
+              <li><a href="https://www.instagram.com/patriots_barbershop/"><img src="instagram.png" alt="Instagram"><span>Instagram</span></a></li>
+              <li><a href="#"><img src="twitter.png" alt="Twitter"><span>Twitter</span></a></li>
+            </ul>
+            <h3>Contact Us</h3>
+            <ul>
+              <li><img src="telephone.png" alt="Email"><span>0907-571-7313</span></li>
+              <li><img src="email.jpg" alt="Email"><span>Patriots.barbershop@gmail.com</span></li>
+            </ul>
+            <h3>Visit Us</h3>
+            <ul>
+              <li><a href="https://www.google.com.ph/maps/search/834+Nicanor+Reyes+St.+Sampaloc,+Manila,+Philippines/@14.6031556,120.9849315,17z/data=!3m1!4b1?entry=ttu"><img src="Maps.png" alt="Maps"><span>834 Nicanor Reyes St. Sampaloc, Manila, Philippines</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="buttom">
+          <hr style="height:2px;border-width:0;background-color:#000000">
+          <p style="text-align: center;">© 2019 Patriots Barbershop, Inc. All Rights Reserved.</p>
+        </div>
+      </footer>
+    
+
+    <script>
+        function Reserve() {
+          window.location.href = "index.HTML";
+          alert("Wait for the notification");
+          alert("Successfully Reserve!");
+        }
+
+        function generateQRCode() {
+            var selectedMethod = document.getElementById("paymentMethod").value;
+            if (selectedMethod === "gcash") {
+                var qrCodeUrl = "https://via.placeholder.com/200";
+                document.getElementById("qrcode").src = qrCodeUrl;
+                document.getElementById("popup").style.display = "block";
+            } else if (selectedMethod === "maya") {
+                var qrCodeUrl = "https://via.placeholder.com/200";
+                document.getElementById("qrcode").src = qrCodeUrl;
+                document.getElementById("popup").style.display = "block";
+            } else {
+                // If no method is selected or an unknown method is selected, hide the popup
+                document.getElementById("popup").style.display = "none";
+            }
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

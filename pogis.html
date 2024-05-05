@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR Code Generator</title>
+<style>
+    #qrcode {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<h2>Select Payment Method</h2>
+<select id="paymentMethod" onchange="showQRCode()">
+    <option value="">Select Payment Method</option>
+    <option value="gcash">GCash</option>
+    <option value="maya">Maya</option>
+    <!-- Add more payment methods here -->
+</select>
+
+<div id="qrcode">
+    <!-- Placeholder QR Code -->
+    <img src="https://via.placeholder.com/200" alt="QR Code" id="qrImage">
+</div>
+
+<script>
+    function showQRCode() {
+        var selectedMethod = document.getElementById("paymentMethod").value;
+        if (selectedMethod === "gcash") {
+            document.getElementById("qrcode").style.display = "block";
+            document.getElementById("qrImage").src = "https://via.placeholder.com/200"; // Replace with GCash QR code image URL
+        } else if (selectedMethod === "maya") {
+            document.getElementById("qrcode").style.display = "block";
+            document.getElementById("qrImage").src = "https://via.placeholder.com/200"; // Replace with Maya QR code image URL
+        } else {
+            document.getElementById("qrcode").style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

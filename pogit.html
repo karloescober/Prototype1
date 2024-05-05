@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Example</title>
+</head>
+<body>
+
+<h2>Choose payment method:</h2>
+<select id="paymentMethod" onchange="showQRCode()">
+  <option value="gcash">GCash</option>
+  <option value="maya">Maya</option>
+</select>
+<br><br>
+
+<div id="qrCodeContainer" style="display: none;">
+    <img id="qrCodeImg" src="" alt="QR Code">
+    <button onclick="closeQRCode()">Close QR Code</button>
+</div>
+
+<script>
+function showQRCode() {
+    var paymentMethod = document.getElementById("paymentMethod").value;
+    var qrCodeImg = document.getElementById("qrCodeImg");
+
+    // Set source of QR code image based on selected payment method
+    if (paymentMethod === "gcash") {
+        qrCodeImg.src = "gcash_qr_code_example.png"; // Replace with your GCash QR code image URL
+    } else if (paymentMethod === "maya") {
+        qrCodeImg.src = "maya_qr_code_example.png"; // Replace with your Maya QR code image URL
+    }
+
+    // Display the QR code container
+    document.getElementById("qrCodeContainer").style.display = "block";
+}
+
+function closeQRCode() {
+    // Hide the QR code container
+    document.getElementById("qrCodeContainer").style.display = "none";
+}
+</script>
+
+</body>
+</html>

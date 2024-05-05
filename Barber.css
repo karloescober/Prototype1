@@ -1,0 +1,192 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 5px 8px 100px black;
+}
+
+.container .Info {
+    margin: -20px 10px 0px 200px;
+}
+
+.Profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: -90px;
+}
+
+.Profile img {
+    width: 100px;
+    height: 100px;
+    background-color: #000000;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    border-radius: 20%;
+    margin-right: 200px;
+}
+
+.Contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.Contact img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin: 10px 10px 0px 650px;
+    
+}
+
+.ContactInfo {
+    margin: -50px 0px 0px 700px;
+    width: 150px;
+    color: rgb(25, 113, 255);
+}
+
+#ContactInfo {
+    margin-top: -5px;
+    margin-left: 1px;
+}
+
+.Website {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.Website img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin: 10px 10px 0px 650px;
+    background-color: #f9f9f9;
+}
+
+.WebsiteInfo {
+    margin: -38px 0px 0px 700px;
+    color: rgb(25, 113, 255);
+}
+
+#WebsiteInfo {
+    margin-top: -5px;
+    margin-left: 1px;
+}
+
+.Time {
+    margin: -38px 0px 0px 850px;
+    width: 200px;
+    background-color: #f9f9f9;
+    border-radius: 5%;
+}
+
+#Time {
+    margin-top: -5px;
+    margin-left: 1px;
+}
+
+.Classic {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    margin: -100px 10px 20px 0px;
+}
+
+.Classic img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.container a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.Classic:hover {
+    background-color: rgb(232, 230, 230);
+}
+
+
+.Head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    margin: -25px 10px 20px 0px;
+}
+
+.Head img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.Head:hover {
+    background-color: rgb(232, 230, 230);
+}
+
+.Fashion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    margin: -20px 10px -10px 0px;
+}
+
+.Fashion img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.Fashion:hover {
+    background-color: rgb(232, 230, 230);
+}
+
+h5 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 13px;
+}
+
+h1, h6{
+    text-shadow: 2px 2px 5px gray;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+h2 {
+    text-shadow: 2px 2px 5px gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}

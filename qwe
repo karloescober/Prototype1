@@ -1,0 +1,213 @@
+<div class="Profile">
+    <div>
+        <h1>Patriots</h1>
+        <h1>Barbershop & Nails</h1>
+        <h6>EST.2019</h6><hr>
+    </div>
+</div>
+
+<h5>BOOK NOW!!</h5><hr><hr>
+
+<h2><b><u>Our Service</u></b></h2>
+div class="Info">
+                <div class="Contact">
+                        <img src="Map Sign.png" alt="Your Name">
+                </div>
+        
+            <a href="https://www.google.com.ph/maps/search/834+Nicanor+Reyes+St.+Sampaloc,+Manila,+Philippines/@14.6031556,120.9849315,17z/data=!3m1!4b1?entry=ttu">
+                <div class="ContactInfo">
+                    <div id="ContactInfo">
+                        <p>834 Nicanor Reyes St. Sampaloc, Manila, Philippines</p> 
+                    </div>
+                </div>
+            </a>
+
+            <div class="Website">
+                <div id="Website">
+                    <img src="Website.png" alt="Your Name">
+                </div>
+            </div>
+    
+            <a href="https://www.facebook.com/PatriotsBarbershop">
+                <div class="WebsiteInfo">
+                    <div id="WebsiteInfo">
+                        <p>Website</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+
+        <div class="Time">
+            <div id="Time">
+                <p><b>Business Hours(PST)</b></p>
+                <p>Mon  - 9:00am - 8:00pm</p>
+                <p>Tue  - 9:00am - 8:00pm</p>
+                <p>Wed  - 9:00am - 8:00pm</p>
+                <p>Thu  - 9:00am - 8:00pm</p>
+                <p>Fri  - 9:00am - 8:00pm</p>
+                <p>Sat  - 9:00am - 8:00pm</p>
+                <p>Sun  - 9:00am - 8:00pm</p>
+            </div>
+        </div>
+
+        <a href="file:///C:/Users/Escober/Documents/Escober-ITAD/PROTOTYPE/Barbers.html">
+            <div class="Classic">
+                <img src="service1.jpg" alt="Your Name"> 
+                <div>
+                    <p>Classic Haircut</p>
+                    <p>(POMADE STYLING)</p>
+                </div>
+            </div>
+        </a>
+
+        <div class="ClassicPrice">
+            <div id="ClassicPrice">
+                <p>P200</p>
+            </div>
+        </div>
+
+        <a href="file:///C:/Users/Escober/Documents/Escober-ITAD/PROTOTYPE/Barbers.html">
+            <div class="Head">
+                <img src="HeadShave.jpg" alt="Your Name">
+                <div>
+                    <p>Head Shave</p>
+                    <p>(HOT TOWEL)</p>
+                </div>
+            </div>
+        </a>
+
+        <div class="HeadPrice">
+            <div id="HeadPrice">
+                <p>P170</p>
+            </div>
+        </div>
+
+        <a href="file:///C:/Users/Escober/Documents/Escober-ITAD/PROTOTYPE/Barbers.html">
+            <div class="Fashion">
+                <img src="Fashion.jpg" alt="Your Name">
+                <div>
+                    <p>Hair Art</p>
+                    <p>(POMADE STYLING)</p>
+                </div>
+            </div>
+        </a>
+
+        <div class="FashionPrice">
+            <div id="FashionPrice">
+                <p>P250-P450</p>
+            </div>
+        </div>
+
+        <a href="file:///C:/Users/Escober/Documents/Escober-ITAD/PROTOTYPE/Barbers.html">
+            <div class="Beard">
+                <img src="Beard.jpg" alt="Your Name">
+                <div>
+                    <p>Beard Shave / Sculpting</p>
+                    <p>(HOT TOWEL)</p>
+                </div>
+            </div>
+        </a>
+
+        <div class="BeardPrice">
+            <div id="BeardPrice">
+                <p>P170</p>
+            </div>
+        </div>
+
+        <a href="file:///C:/Users/Escober/Documents/Escober-ITAD/PROTOTYPE/Barbers.html">
+            <div class="Signature">
+                <img src="Signature.jpg" alt="Your Name">
+                <div>
+                    <p>Signature Grooming</p>
+                    <p>(CLASSIC HAIRCUT, BASIC GROOMING, BEARD SHAVE, HOT TOWEL)</p>
+                </div>
+            </div>
+        </a>
+
+        <div class="SignaturePrice">
+            <div id="SignaturePrice">
+                <p>P400</p>
+            </div>
+        </div>
+
+        <h2><b><u>Other Services</u></b></h2>
+
+        <a href="file:///C:/Users/Escober/Documents/Escober-ITAD/PROTOTYPE/Barbers.html">
+            <div class="Shampoo">
+                <p>SHAMPOO & BLOW DRY</p>
+            </div>
+        </a>
+
+        <div class="ShampooPrice">
+            <div id="ShampooPrice">
+                <p>P50</p>
+            </div>
+        </div>
+
+        <a href="file:///C:/Users/Escober/Documents/Escober-ITAD/PROTOTYPE/Barbers.html">
+            <div class="Perm">
+                <p>PERM</p>
+            </div>
+        </a>
+
+        <div class="PermPrice">
+            <div id="PermPrice">
+                <p>P1,500</p>
+            </div>
+        </div>
+
+        <a href="file:///C:/Users/Escober/Documents/Escober-ITAD/PROTOTYPE/Barbers.html">
+            <div class="Hair">
+                <p>HAIR COLOR</p>
+            </div>
+        </a>
+
+        <div class="HairColorPrice">
+            <div id="HairColorPrice">
+                <p>START AT P700</p>
+            </div>
+        </div>
+
+        <a href="file:///C:/Users/Escober/Documents/Escober-ITAD/PROTOTYPE/Barbers.html">
+            <div class="Ear">
+                <p>EAR CANDLING</p>
+            </div>
+        </a>
+
+        <div class="EarPrice">
+            <div id="EarPrice">
+                <p>P150</p>
+            </div>
+        </div>
+
+        <a href="file:///C:/Users/Escober/Documents/Escober-ITAD/PROTOTYPE/Barbers.html">
+            <div class="Mentholated">
+                <p>MENTHOLATED SCALP TREATMENT</p>
+            </div>
+        </a>
+
+        <div class="MentholatedPrice">
+            <div id="MentholatedPrice">
+                <p>P450</p>
+            </div>
+        </div>
+        
+        <a href="file:///C:/Users/Escober/Documents/Escober-ITAD/PROTOTYPE/Barbers.html">
+            <div class="Neck">
+                <p>NECK & HEAD MASSAGE</p>
+            </div>
+        </a>
+
+        <div class="NeckPrice">
+            <div id="NeckPrice">
+                <p>P150</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Book Your Appointment</title>
+    <style type="text/css">
+        body {
+            background-repeat: no-repeat;
+            background-size: 100%; 
+            background-attachment: fixed;
+            background-color: white;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(431310930_739972584788375_2803517187540897881_n.jpg);
+            margin: 0px;
+            padding: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="log in.css">
+    <!--Patriots barbershop-->
+    <!--3.1.2024-->
+
+    <a onclick="openPopup()" class="SignIn">Log In</a>
+<!---------------------------------------------------log in popup---------------------------------------------------------------------- -->
+<div id="loginPopup" class="main">
+    <div class="body">
+      <form id="form">
+        <div class="login-text">
+          <p>TENANT LOGIN</p>
+        </div>
+        <div class="welcome-text">
+          <h1>WELCOME!</h1>
+          <hr size="5" color="#9F662E" align="left" width="27%">
+        </div>
+        <div class="user-pass">
+          <p>Username</p>
+          <input type="text" id="userName" name="userName" placeholder="Enter Username">
+        </div>
+        <div class="user-pass">
+          <p>Password</p>
+          <input type="password" id="passWord" name="passWord" placeholder="Enter Password">
+        </div>
+        <!-- Dropdown for selecting user type -->
+        <div class="user-pass">
+          <p>User Type</p>
+          <select id="type" name="type" required>
+            <option value="Select">Select</option>
+            <option value="tenant">Tenant</option>
+            <option value="admin">Admin</option>
+          </select>
+          <br>
+          <a href="../signinfolder/tenant-SignUp.html" class="create">Create Account</a>
+        </div>
+
+        <div style="display: flex;">
+          <button type="submit" class="loginbtn">Log In</button>
+          <a onclick="closePopup()" class="tenant-cancel">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      var userName = document.getElementById("userName").value;
+      var passWord = document.getElementById("passWord").value;
+      var userType = document.getElementById("type").value; // Get selected user type
+      var storedUserData = JSON.parse(localStorage.getItem("TenantForms"));
+      if (storedUserData) {
+        var foundUser = storedUserData.find(function (user) {
+          return user.userName === userName && user.passWord === passWord && user.type === userType; // Check user type as well
+        });
+        if (foundUser) {
+          localStorage.setItem("loggedInUser", JSON.stringify(foundUser));
+          alert("Login successful!");
+
+          // Redirect based on user type
+          if (userType === "tenant") {
+            window.location.href = "../tenantsinfo/AccountDetails.html"; // Redirect to tenant details
+          } else if (userType === "admin") {
+            window.location.href = "../../Admin/Admin - Dashboard/dashboard.html"; // Redirect to admin dashboard
+          }
+        } else {
+          alert("Invalid username, password, or user type. Please try again.");
+        }
+      } else {
+        alert("No user found. Please register first.");
+      }
+    });
+
+    function openPopup() {
+  document.getElementById("loginPopup").style.display = "block";
+  document.getElementById("Body").style.display = "rgba(0, 0, 0, 0.5)";
+  
+}
+document.getElementById("Body").addEventListener("submit", function(event) {
+  event.preventDefault();
+  var userName = document.getElementById("userName").value;
+  var loginPassword = document.getElementById("loginPassword").value;
+  var storedUserData = JSON.parse(localStorage.getItem("userData"));
+  if (storedUserData && userName === storedUserData.email && loginPassword === storedUserData.password) {
+    localStorage.setItem("loggedInUser", JSON.stringify(storedUserData));
+    window.location.href = "Home.html"; // Redirect to profile page
+  } else {
+    alert("Invalid email or password. Please try again.");
+  }
+});
+function closePopup() {
+  document.getElementById("loginPopup").style.display = "none";
+}
+  </script>
